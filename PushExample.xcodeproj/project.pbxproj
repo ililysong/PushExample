@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041DE37D1EEE416800D9811B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041DE37C1EEE416800D9811B /* GoogleService-Info.plist */; };
+		041DE3801EEE42D000D9811B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041DE37E1EEE42D000D9811B /* UserNotifications.framework */; };
+		041DE3811EEE42D000D9811B /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041DE37F1EEE42D000D9811B /* UserNotificationsUI.framework */; };
 		04FE047C1EEE3D7000CDC1EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE047B1EEE3D7000CDC1EC /* main.m */; };
 		04FE047F1EEE3D7000CDC1EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE047E1EEE3D7000CDC1EC /* AppDelegate.m */; };
 		04FE04821EEE3D7000CDC1EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FE04811EEE3D7000CDC1EC /* ViewController.m */; };
 		04FE04851EEE3D7000CDC1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FE04831EEE3D7000CDC1EC /* Main.storyboard */; };
 		04FE04871EEE3D7000CDC1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FE04861EEE3D7000CDC1EC /* Assets.xcassets */; };
 		04FE048A1EEE3D7000CDC1EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FE04881EEE3D7000CDC1EC /* LaunchScreen.storyboard */; };
+		876E2EA692D8B3B83F544A77 /* libPods-PushExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83280BD56710AF0AF9390C96 /* libPods-PushExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041DE37C1EEE416800D9811B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		041DE37E1EEE42D000D9811B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		041DE37F1EEE42D000D9811B /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		04AA8F031EEE3FD900B9638D /* PushExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushExample.entitlements; sourceTree = "<group>"; };
 		04FE04771EEE3D7000CDC1EC /* PushExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FE047B1EEE3D7000CDC1EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04FE047D1EEE3D7000CDC1EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +34,9 @@
 		04FE04861EEE3D7000CDC1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04FE04891EEE3D7000CDC1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04FE048B1EEE3D7000CDC1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22390CF6C8BB15F68D222B87 /* Pods-PushExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushExample/Pods-PushExample.release.xcconfig"; sourceTree = "<group>"; };
+		6E18F731903943EB301706D6 /* Pods-PushExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushExample/Pods-PushExample.debug.xcconfig"; sourceTree = "<group>"; };
+		83280BD56710AF0AF9390C96 /* libPods-PushExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PushExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041DE3801EEE42D000D9811B /* UserNotifications.framework in Frameworks */,
+				041DE3811EEE42D000D9811B /* UserNotificationsUI.framework in Frameworks */,
+				876E2EA692D8B3B83F544A77 /* libPods-PushExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +56,11 @@
 		04FE046E1EEE3D7000CDC1EC = {
 			isa = PBXGroup;
 			children = (
+				041DE37C1EEE416800D9811B /* GoogleService-Info.plist */,
 				04FE04791EEE3D7000CDC1EC /* PushExample */,
 				04FE04781EEE3D7000CDC1EC /* Products */,
+				B90AA7B6DB8B53CB960DD4E9 /* Pods */,
+				F3E4DF79542C4ACB7D898A66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +75,7 @@
 		04FE04791EEE3D7000CDC1EC /* PushExample */ = {
 			isa = PBXGroup;
 			children = (
+				04AA8F031EEE3FD900B9638D /* PushExample.entitlements */,
 				04FE047D1EEE3D7000CDC1EC /* AppDelegate.h */,
 				04FE047E1EEE3D7000CDC1EC /* AppDelegate.m */,
 				04FE04801EEE3D7000CDC1EC /* ViewController.h */,
@@ -79,6 +97,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B90AA7B6DB8B53CB960DD4E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E18F731903943EB301706D6 /* Pods-PushExample.debug.xcconfig */,
+				22390CF6C8BB15F68D222B87 /* Pods-PushExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3E4DF79542C4ACB7D898A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				041DE37E1EEE42D000D9811B /* UserNotifications.framework */,
+				041DE37F1EEE42D000D9811B /* UserNotificationsUI.framework */,
+				83280BD56710AF0AF9390C96 /* libPods-PushExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04FE048E1EEE3D7000CDC1EC /* Build configuration list for PBXNativeTarget "PushExample" */;
 			buildPhases = (
+				15A1F5D93371276F940D8A2F /* [CP] Check Pods Manifest.lock */,
 				04FE04731EEE3D7000CDC1EC /* Sources */,
 				04FE04741EEE3D7000CDC1EC /* Frameworks */,
 				04FE04751EEE3D7000CDC1EC /* Resources */,
+				C1BD4945C0013EF9B4E2E90B /* [CP] Embed Pods Frameworks */,
+				D998E4EF68DC2165D6C70812 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,7 +150,16 @@
 				TargetAttributes = {
 					04FE04761EEE3D7000CDC1EC = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SLAZA434E6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,12 +187,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FE048A1EEE3D7000CDC1EC /* LaunchScreen.storyboard in Resources */,
+				041DE37D1EEE416800D9811B /* GoogleService-Info.plist in Resources */,
 				04FE04871EEE3D7000CDC1EC /* Assets.xcassets in Resources */,
 				04FE04851EEE3D7000CDC1EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15A1F5D93371276F940D8A2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1BD4945C0013EF9B4E2E90B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushExample/Pods-PushExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D998E4EF68DC2165D6C70812 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushExample/Pods-PushExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04FE04731EEE3D7000CDC1EC /* Sources */ = {
@@ -272,8 +370,11 @@
 		};
 		04FE048F1EEE3D7000CDC1EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E18F731903943EB301706D6 /* Pods-PushExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushExample/PushExample.entitlements;
+				DEVELOPMENT_TEAM = SLAZA434E6;
 				INFOPLIST_FILE = PushExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onefire.PushExample;
@@ -283,8 +384,11 @@
 		};
 		04FE04901EEE3D7000CDC1EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22390CF6C8BB15F68D222B87 /* Pods-PushExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushExample/PushExample.entitlements;
+				DEVELOPMENT_TEAM = SLAZA434E6;
 				INFOPLIST_FILE = PushExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onefire.PushExample;
@@ -311,6 +415,7 @@
 				04FE04901EEE3D7000CDC1EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
